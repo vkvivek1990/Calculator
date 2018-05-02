@@ -1,0 +1,87 @@
+@font-face {
+  font-family: calculator;
+  src: url('./fonts/digital-7.ttf');
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.container.overall {
+  background: #a1d5ea;
+  padding:53px;
+  /*width:390px;*/
+  height: 100%;
+}
+
+.container.overall .row {
+  display:  flex;
+  align-items:  center;
+  justify-content: center;
+}
+
+.container.overall .row .col-xs-3 {
+  margin: 2px;
+}
+
+.inputBox{
+  border: none;
+  height: 30px;
+  width: 140px;
+  background: #626d71;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px; 
+  font-family: calculator;
+}
+
+a.cal-btn {
+    color: #607D8B;
+    background: #fefefe;
+    padding: 10px;
+    width: 30px;
+    display: table-cell;
+    box-shadow: #60737a 1px 1px 5px 0px, #000 0px 0px 7px -2px inset;
+    height: 30px;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 3px; 
+}
+a.cal-btn:hover {
+  background: #e4e4e4;
+  box-shadow: #60737a 0px 0px 4px 0px, #000 0px 0px 7px -2px inset; 
+}
+a.cal-btn.equal {
+  background: #eeff94;
+}
+a.cal-btn.clear {
+  background: #ffa0ab;
+}
+
+a.cal-btn.operator {
+  background: #ffc107;
+  color: #fff;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
